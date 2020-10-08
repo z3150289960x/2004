@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		<tr>
+			<td>用户ID</td>
+			<td>用户名</td>
+			<td>邮箱</td>
+			<td>密码</td>
+			<td>注册时间</td>
+			<td>最后登录时间</td>
+			<td>最后登录IP</td>
+			<td>登录次数</td>
+		</tr>
+		{foreach as $key=>$value}
+		<tr>
+			<td>{$v.uid}</td>
+			<td>{$v.uname}</td>
+			<td>{$v.uemail}</td>
+			<td>{$v.upwd}</td>
+			<td>{$v.utime}</td>
+			<td>{$v.ntime}</td>
+			<td>{$v.uname}</td>
+			<td>{$v.udata}</td>
+		</tr>
+		{/foreach}
+	</form>
+</body>
+</html>
